@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "cd69da6a-853e-41f0-881c-198b510706df",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Enes/Desktop/docker-stop.bat"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/files/upload",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"files",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Files",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/files",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get File with Id like byte array",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/files/7",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"files",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete File with ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/files/7",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"files",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Replace File with ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Enes/Desktop/cerrahpaşallı.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/files/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"files",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
